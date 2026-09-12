@@ -1,0 +1,27 @@
+{
+  "npz": "D:\\VUA\\WJ\\EarSense_GitHub_release_artifacts\\data\\questionnaire_processed\\nn_dataset_subject_level.npz",
+  "label_xlsx": "D:\\VUA\\WJ\\EarSense_GitHub_release_artifacts\\data\\questionnaire_processed\\pvt_sd_rt_ms_labels.xlsx",
+  "id_col": "subject",
+  "target_col": "sd_rt_ms",
+  "out_dir": "D:\\VUA\\WJ\\EarSense_GitHub_release_artifacts\\results\\pvt\\pvt_mlp_sd_rt_out",
+  "hidden": [
+    64
+  ],
+  "epochs": 10,
+  "lr": 0.01,
+  "seed": 0,
+  "verbose_every": 500,
+  "batch_size": 8,
+  "num_test_batches": 5,
+  "batch_seed": 123,
+  "shuffle_batches": false,
+  "test_batch_ids": null,
+  "N": 27,
+  "num_batches": 4,
+  "chosen_batch_ids": [
+    0,
+    2,
+    3,
+    1
+  ]
+}

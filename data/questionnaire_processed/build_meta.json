@@ -1,0 +1,1487 @@
+[
+  {
+    "patient_dir": "./questionare\\Healthy_1",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 4014200
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 4014200
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 1906745
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 1906745
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 1906745
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 501775
+      }
+    },
+    "minutes_used": 334,
+    "patient_id": "Healthy_1"
+  },
+  {
+    "patient_dir": "./questionare\\Healthy_10",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 5310000
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 5310000
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2522250
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2522250
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2522250
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 663750
+      }
+    },
+    "minutes_used": 442,
+    "patient_id": "Healthy_10"
+  },
+  {
+    "patient_dir": "./questionare\\Healthy_11",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 5269400
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 5269400
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2502965
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2502965
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2502965
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 658675
+      }
+    },
+    "minutes_used": 439,
+    "patient_id": "Healthy_11"
+  },
+  {
+    "patient_dir": "./questionare\\Healthy_12",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 5010000
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 5010000
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2379750
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2379750
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2379750
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 626250
+      }
+    },
+    "minutes_used": 417,
+    "patient_id": "Healthy_12"
+  },
+  {
+    "patient_dir": "./questionare\\Healthy_13",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 6565200
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 6565200
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 3118470
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 3118470
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 3118470
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 820650
+      }
+    },
+    "minutes_used": 547,
+    "patient_id": "Healthy_13"
+  },
+  {
+    "patient_dir": "./questionare\\Healthy_14",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 5304000
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 5304000
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2519400
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2519400
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2519400
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 663000
+      }
+    },
+    "minutes_used": 442,
+    "patient_id": "Healthy_14"
+  },
+  {
+    "patient_dir": "./questionare\\Healthy_15",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 5094000
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 5094000
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2419650
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2419650
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2419650
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 636750
+      }
+    },
+    "minutes_used": 424,
+    "patient_id": "Healthy_15"
+  },
+  {
+    "patient_dir": "./questionare\\Healthy_16",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 5220000
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 5220000
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2479500
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2479500
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2479500
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 652500
+      }
+    },
+    "minutes_used": 435,
+    "patient_id": "Healthy_16"
+  },
+  {
+    "patient_dir": "./questionare\\Healthy_17",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 5019000
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 5019000
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2384025
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2384025
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2384025
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 627375
+      }
+    },
+    "minutes_used": 418,
+    "patient_id": "Healthy_17"
+  },
+  {
+    "patient_dir": "./questionare\\Healthy_18",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 5353800
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 5353800
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2543055
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2543055
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2543055
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 669225
+      }
+    },
+    "minutes_used": 446,
+    "patient_id": "Healthy_18"
+  },
+  {
+    "patient_dir": "./questionare\\Healthy_19",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 6138000
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 6138000
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2915550
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2915550
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2915550
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 767250
+      }
+    },
+    "minutes_used": 511,
+    "patient_id": "Healthy_19"
+  },
+  {
+    "patient_dir": "./questionare\\Healthy_2",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 4710000
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 4710000
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2237250
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2237250
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2237250
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 588750
+      }
+    },
+    "minutes_used": 392,
+    "patient_id": "Healthy_2"
+  },
+  {
+    "patient_dir": "./questionare\\Healthy_20",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 5689000
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 5689000
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2702275
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2702275
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2702275
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 711125
+      }
+    },
+    "minutes_used": 474,
+    "patient_id": "Healthy_20"
+  },
+  {
+    "patient_dir": "./questionare\\Healthy_21",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 5202000
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 5202000
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2470950
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2470950
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2470950
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 650250
+      }
+    },
+    "minutes_used": 433,
+    "patient_id": "Healthy_21"
+  },
+  {
+    "patient_dir": "./questionare\\Healthy_3",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 5412000
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 5412000
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2570700
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2570700
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2570700
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 676500
+      }
+    },
+    "minutes_used": 451,
+    "patient_id": "Healthy_3"
+  },
+  {
+    "patient_dir": "./questionare\\Healthy_4",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 4526600
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 4526600
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2150135
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2150135
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2150135
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 565825
+      }
+    },
+    "minutes_used": 377,
+    "patient_id": "Healthy_4"
+  },
+  {
+    "patient_dir": "./questionare\\Healthy_5",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 5550000
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 5550000
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2636250
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2636250
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2636250
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 693750
+      }
+    },
+    "minutes_used": 462,
+    "patient_id": "Healthy_5"
+  },
+  {
+    "patient_dir": "./questionare\\Healthy_6",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 6240000
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 6240000
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2964000
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2964000
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2964000
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 780000
+      }
+    },
+    "minutes_used": 520,
+    "patient_id": "Healthy_6"
+  },
+  {
+    "patient_dir": "./questionare\\Healthy_7",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 5316000
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 5316000
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2525100
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2525100
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2525100
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 664500
+      }
+    },
+    "minutes_used": 443,
+    "patient_id": "Healthy_7"
+  },
+  {
+    "patient_dir": "./questionare\\Healthy_8",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 4962000
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 4962000
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2356950
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2356950
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2356950
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 620250
+      }
+    },
+    "minutes_used": 413,
+    "patient_id": "Healthy_8"
+  },
+  {
+    "patient_dir": "./questionare\\Healthy_9",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 5059800
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 5059800
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2403405
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2403405
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2403405
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 632475
+      }
+    },
+    "minutes_used": 421,
+    "patient_id": "Healthy_9"
+  },
+  {
+    "patient_dir": "./questionare\\Patient_1",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 4494000
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 4494000
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2134650
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2134650
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2134650
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 561750
+      }
+    },
+    "minutes_used": 374,
+    "patient_id": "Patient_1"
+  },
+  {
+    "patient_dir": "./questionare\\Patient_2",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 6642000
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 6642000
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 3154950
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 3154950
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 3154950
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 830250
+      }
+    },
+    "minutes_used": 553,
+    "patient_id": "Patient_2"
+  },
+  {
+    "patient_dir": "./questionare\\Patient_3",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 6528000
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 6528000
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 3100800
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 3100800
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 3100800
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 816000
+      }
+    },
+    "minutes_used": 544,
+    "patient_id": "Patient_3"
+  },
+  {
+    "patient_dir": "./questionare\\Patient_4",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 5070000
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 5070000
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2408250
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2408250
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2408250
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 633750
+      }
+    },
+    "minutes_used": 422,
+    "patient_id": "Patient_4"
+  },
+  {
+    "patient_dir": "./questionare\\Patient_5",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 6708000
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 6708000
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 3186300
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 3186300
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 3186300
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 838500
+      }
+    },
+    "minutes_used": 559,
+    "patient_id": "Patient_5"
+  },
+  {
+    "patient_dir": "./questionare\\Patient_6",
+    "used": {
+      "EEG": {
+        "label": "Ear EEG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 100.0,
+        "n": 5382000
+      },
+      "ECG": {
+        "label": "ECG",
+        "src": "Sleep_all.edf",
+        "fs_in": 200.0,
+        "fs_out": 50.0,
+        "n": 5382000
+      },
+      "PPG": [
+        {
+          "label": "Raw PPG_Green",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2556450
+        },
+        {
+          "label": "Raw PPG_Red",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2556450
+        },
+        {
+          "label": "Raw PPG_IR",
+          "src": "Sleep_all.edf",
+          "fs_in": 95.0,
+          "fs_out": 50.0,
+          "n": 2556450
+        }
+      ],
+      "ACC": {
+        "labels": [
+          "Ax",
+          "Ay",
+          "Az"
+        ],
+        "src": "Sleep_all.edf",
+        "fs_in": 20.0,
+        "fs_out": 25.0,
+        "n": 672750
+      }
+    },
+    "minutes_used": 448,
+    "patient_id": "Patient_6"
+  }
+]

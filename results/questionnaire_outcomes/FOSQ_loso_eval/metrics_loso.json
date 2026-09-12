@@ -1,0 +1,14 @@
+{
+  "N": 27,
+  "acc": 0.9629629629629629,
+  "bal_acc": 0.9722222222222222,
+  "macro_f1": 0.9625668449197862,
+  "num_classes": 4,
+  "labels_show": [
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "note": "If using a single ckpt trained on all subjects, this is NOT strict LOOSO."
+}
