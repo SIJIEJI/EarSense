@@ -17,13 +17,11 @@ release. It is not yet a polished repository.
   - `code/sleep_stage/N1-ctx.py`
   - `code/sleep_stage/N1-ctx-overfit.py`
 - Processed data:
-  - `data/sleep_stage_processed/X.npy`
   - `data/sleep_stage_processed/y.npy`
   - `data/sleep_stage_processed/sid.npy`
   - `data/sleep_stage_processed/meta.json`
 - Models:
   - `models/sleep_stage/model.pt`
-  - `models/sleep_stage/model_all_overfit.pt`
   - `models/sleep_stage/stage1_n1_vs_rest.pt`
   - `models/sleep_stage/stage2_rest4.pt`
 - Results:
@@ -32,6 +30,10 @@ release. It is not yet a polished repository.
 
 The manuscript reports sleep staging agreement near 89.9%. The matching copied
 result is in `results/sleep_stage/SleepStageOutput/metrics.json`.
+
+Note: `data/sleep_stage_processed/X.npy` was intentionally excluded from the
+GitHub upload because it is about 530 MB. The local staging copy still contains
+it, but it is listed in `.gitignore` and is not part of this repository.
 
 Example run from this folder:
 
@@ -143,4 +145,3 @@ Use `requirements_repro.txt` for a fuller dependency list than the original
 
 - `docs/Combined Manuscript_20260323.docx`
 - `docs/manuscript_text_extracted.txt`
-
