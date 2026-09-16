@@ -10,3 +10,9 @@ torch>=2.0
 pyedflib>=0.1.37
 openpyxl>=3.1
 mne>=1.5
+neurokit2>=0.2
+xgboost>=2.0
+lightgbm>=4.0
+catboost>=1.2
+shap>=0.44
+
