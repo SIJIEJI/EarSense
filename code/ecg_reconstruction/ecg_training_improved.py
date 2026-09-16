@@ -10,6 +10,7 @@ ECG training + evaluation + improved scatter plotting (calibrated)
 
 import os
 import math
+import argparse
 import numpy as np
 import pandas as pd
 import torch
@@ -71,9 +72,28 @@ class ECGDataset(Dataset):
 
         # amplitude jitter (same scale for input/target)
         if self.augment and np.random.rand() < 0.5:
-            scale = np.random.uniform(0.9, 1.1)
+            orig_len = len(signal)
+            scale = np.random.uniform(0.8, 1.2)
             signal *= scale
             target *= scale
+
+            warp = np.random.uniform(0.9, 1.1)
+            warped_len = max(2, int(round(orig_len * warp)))
+            old_x = np.linspace(0.0, 1.0, orig_len)
+            new_x = np.linspace(0.0, 1.0, warped_len)
+            signal = np.interp(new_x, old_x, signal)
+            target = np.interp(new_x, old_x, target)
+
+            if warped_len >= orig_len:
+                start = np.random.randint(0, warped_len - orig_len + 1)
+                signal = signal[start:start + orig_len]
+                target = target[start:start + orig_len]
+            else:
+                pad = orig_len - warped_len
+                left = np.random.randint(0, pad + 1)
+                right = pad - left
+                signal = np.pad(signal, (left, right), mode="edge")
+                target = np.pad(target, (left, right), mode="edge")
 
         # standardize per-segment (helps training stability)
         s_mu, s_sd = signal.mean(), signal.std()
@@ -160,6 +180,37 @@ class MultiScalePeakLoss(nn.Module):
             total = total + w * loss
         return total
 
+class FocalFrequencyLoss(nn.Module):
+    def __init__(self, alpha=1.0, eps=1e-8):
+        super().__init__()
+        self.alpha = alpha
+        self.eps = eps
+
+    def forward(self, pred, target):
+        pred_fft = torch.fft.rfft(pred.squeeze(-1), dim=1)
+        target_fft = torch.fft.rfft(target.squeeze(-1), dim=1)
+        diff = pred_fft - target_fft
+        freq_dist = diff.real.pow(2) + diff.imag.pow(2)
+
+        with torch.no_grad():
+            weight = freq_dist.pow(self.alpha)
+            weight = weight / (weight.mean(dim=1, keepdim=True) + self.eps)
+
+        return torch.mean(weight * freq_dist)
+
+class ECGReconstructionLoss(nn.Module):
+    def __init__(self, peak_weight=0.99, focal_frequency_weight=0.01):
+        super().__init__()
+        self.peak_weight = peak_weight
+        self.focal_frequency_weight = focal_frequency_weight
+        self.peak_loss = MultiScalePeakLoss()
+        self.focal_frequency_loss = FocalFrequencyLoss()
+
+    def forward(self, pred, target):
+        peak = self.peak_loss(pred, target)
+        focal_frequency = self.focal_frequency_loss(pred, target)
+        return self.peak_weight * peak + self.focal_frequency_weight * focal_frequency
+
 # ------------------------
 # Data processing
 # ------------------------
@@ -235,21 +286,35 @@ def plot_scatter_enhanced(gt, pr, out_png):
 # Main (training optional; plotting supported after eval)
 # ------------------------
 def main():
-    # Params
-    BATCH_SIZE = 32
-    LR = 1e-3
-    EPOCHS = 30        # keep modest for quick runs; adjust as needed
-    SEG_LEN = 500
-    OVERLAP = 0.5
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--train_csvs", nargs="+", required=True, help="Paired ECG training CSV files: time, reference ECG, in-ear input.")
+    parser.add_argument("--out_ckpt", default="best_model.pth", help="Output checkpoint path.")
+    parser.add_argument("--epochs", type=int, default=30)
+    parser.add_argument("--batch_size", type=int, default=32)
+    parser.add_argument("--lr", type=float, default=1e-3)
+    parser.add_argument("--seg_len", type=int, default=2000)
+    parser.add_argument("--overlap", type=float, default=0.5)
+    args = parser.parse_args()
 
-    # Load data (expects 1.csv, 2.csv). If missing, raise clearly.
-    for p in ["1.csv", "2.csv"]:
+    # Params
+    BATCH_SIZE = args.batch_size
+    LR = args.lr
+    EPOCHS = args.epochs
+    SEG_LEN = args.seg_len
+    OVERLAP = args.overlap
+
+    # Load paired training data.
+    for p in args.train_csvs:
         if not os.path.exists(p):
             raise FileNotFoundError(f"Missing data file: {p}")
 
-    X1, y1 = process_data('1.csv', segment_length=SEG_LEN, overlap=OVERLAP)
-    X2, y2 = process_data('2.csv', segment_length=SEG_LEN, overlap=OVERLAP)
-    X = np.vstack([X1, X2]); y = np.vstack([y1, y2])
+    X_list, y_list = [], []
+    for p in args.train_csvs:
+        Xi, yi = process_data(p, segment_length=SEG_LEN, overlap=OVERLAP)
+        X_list.append(Xi)
+        y_list.append(yi)
+    X = np.vstack(X_list)
+    y = np.vstack(y_list)
 
     X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42)
 
@@ -257,7 +322,7 @@ def main():
     val_loader   = DataLoader(ECGDataset(X_val,   y_val,   augment=False), batch_size=BATCH_SIZE, shuffle=False)
 
     model = ECGNet().to(device)
-    criterion = MultiScalePeakLoss()
+    criterion = ECGReconstructionLoss(peak_weight=0.99, focal_frequency_weight=0.01)
     optimzr = optim.AdamW(model.parameters(), lr=LR, weight_decay=1e-4)
     sched = optim.lr_scheduler.CosineAnnealingLR(optimzr, T_max=max(10, EPOCHS//3), eta_min=1e-6)
 
@@ -287,11 +352,11 @@ def main():
         vlm = vl / max(1, len(val_loader))
         if vlm < best:
             best = vlm
-            torch.save(model.state_dict(), "best_model.pth")
+            torch.save(model.state_dict(), args.out_ckpt)
         print(f"Epoch {ep+1}/{EPOCHS} | Train {trm:.4f} | Val {vlm:.4f}")
 
     # Eval a batch for plotting
-    model.load_state_dict(torch.load("best_model.pth", map_location=device))
+    model.load_state_dict(torch.load(args.out_ckpt, map_location=device))
     model.eval()
     with torch.no_grad():
         xb = torch.from_numpy(X_val[:8]).float().unsqueeze(-1).to(device)  # [N,L,1]
@@ -307,7 +372,6 @@ def main():
     print("[OK] Saved: scatter_calibrated.png")
 
 if __name__ == "__main__":
-    # If user runs without data in this environment, just exit cleanly with message.
     try:
         main()
     except FileNotFoundError as e:

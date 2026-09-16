@@ -1,0 +1,83 @@
+{
+  "mode": "cascade",
+  "num_epochs": 160,
+  "stage_names": [
+    "W",
+    "N1",
+    "N2",
+    "N3",
+    "REM"
+  ],
+  "accuracy": 0.89375,
+  "balanced_accuracy": 0.7998391151332328,
+  "macro_f1": 0.8094567010597545,
+  "per_class_precision": [
+    0.6666666666666666,
+    0.6111111111111112,
+    0.8939393939393939,
+    1.0,
+    0.9696969696969697
+  ],
+  "per_class_recall": [
+    0.4444444444444444,
+    0.6470588235294118,
+    0.9076923076923077,
+    1.0,
+    1.0
+  ],
+  "per_class_f1": [
+    0.5333333333333333,
+    0.6285714285714287,
+    0.900763358778626,
+    1.0,
+    0.9846153846153847
+  ],
+  "per_class_support": [
+    9,
+    17,
+    65,
+    37,
+    32
+  ],
+  "confusion_matrix_labels_0_to_4": [
+    [
+      4,
+      4,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      11,
+      6,
+      0,
+      0
+    ],
+    [
+      2,
+      3,
+      59,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      37,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      32
+    ]
+  ],
+  "data_dir": "D:\\VUA\\WJ\\EarSense_GitHub_release_artifacts\\data\\sleep_stage_demo_subset",
+  "weights_dir": "D:\\VUA\\WJ\\EarSense_GitHub_release_artifacts\\models\\sleep_stage",
+  "ctx": 3,
+  "alpha_n1": 1.4
+}

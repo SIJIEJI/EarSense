@@ -19,6 +19,7 @@ os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
 
 import math
 import csv
+from pathlib import Path
 from typing import List, Tuple, Optional, Dict
 
 import torch
@@ -26,6 +27,10 @@ import torch.nn as nn
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
 import numpy as np
+
+RELEASE_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_CSV = RELEASE_ROOT / "data" / "ecg_reconstruction" / "test_data.csv"
+DEFAULT_CKPT = RELEASE_ROOT / "models" / "ecg_reconstruction" / "best_model.pth"
 
 # -----------------------------
 # Model definition (placeholder; match your training if needed)
@@ -461,8 +466,8 @@ def bland_altman(a: torch.Tensor, b: torch.Tensor) -> Tuple[float, float, float]
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--csv", type=str, default="1.csv")
-    parser.add_argument("--ckpt", type=str, default="best_model.pth")
+    parser.add_argument("--csv", type=str, default=str(DEFAULT_CSV))
+    parser.add_argument("--ckpt", type=str, default=str(DEFAULT_CKPT))
     parser.add_argument("--device", type=str, default="cuda" if torch.cuda.is_available() else "cpu")
     parser.add_argument("--seg_len", type=int, default=2000)
     parser.add_argument("--overlap", type=float, default=0.5)

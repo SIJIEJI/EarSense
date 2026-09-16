@@ -12,6 +12,7 @@ ECG long-sequence reconstruction & visualization (NumPy-light, Torch-only metric
 
 import argparse
 import os
+from pathlib import Path
 
 from ecg_recon_metrics_plus import pearsonr_torch, prd_percent, snr_db
 # Mitigate Windows OpenMP duplicate runtime crash when multiple runtimes are present.
@@ -26,6 +27,10 @@ import torch.nn as nn
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
 import numpy as np
+
+RELEASE_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_CSV = RELEASE_ROOT / "data" / "ecg_reconstruction" / "test_data.csv"
+DEFAULT_CKPT = RELEASE_ROOT / "models" / "ecg_reconstruction" / "best_model.pth"
 
 # -----------------------------
 # Model definition (match training)
@@ -369,8 +374,8 @@ def windowed_metrics(gt: torch.Tensor,
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--csv", type=str, default="1.csv", help="Path to input CSV (time, ecg(optional), mixed).")
-    parser.add_argument("--ckpt", type=str, default="best_model.pth")
+    parser.add_argument("--csv", type=str, default=str(DEFAULT_CSV), help="Path to input CSV (time, ecg(optional), mixed).")
+    parser.add_argument("--ckpt", type=str, default=str(DEFAULT_CKPT))
     parser.add_argument("--device", type=str, default="cuda" if torch.cuda.is_available() else "cpu")
     parser.add_argument("--seg_len", type=int, default=2000)
     parser.add_argument("--overlap", type=float, default=0.5)

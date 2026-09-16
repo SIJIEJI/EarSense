@@ -23,11 +23,16 @@ Outputs:
 
 import argparse
 import os
+from pathlib import Path
 import numpy as np
 import pandas as pd
 import torch
 import torch.nn as nn
 import matplotlib.pyplot as plt
+
+RELEASE_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_CSV = RELEASE_ROOT / "data" / "ecg_reconstruction" / "test_data.csv"
+DEFAULT_CKPT = RELEASE_ROOT / "models" / "ecg_reconstruction" / "best_model.pth"
 
 # -----------------------------
 # Model definition (must match training)
@@ -184,8 +189,8 @@ def load_csv(csv_path: str, no_gt: bool = False):
 
 def main():
     parser = argparse.ArgumentParser()
-    #parser.add_argument("--csv", type=str, required=True, help="Path to CSV with [time, ecg?, mixed]")
-    parser.add_argument("--ckpt", type=str, default="best_model.pth", help="Model checkpoint path")
+    parser.add_argument("--csv", type=str, default=str(DEFAULT_CSV), help="Path to CSV with [time, ecg?, mixed]")
+    parser.add_argument("--ckpt", type=str, default=str(DEFAULT_CKPT), help="Model checkpoint path")
     parser.add_argument("--device", type=str, default="cuda" if torch.cuda.is_available() else "cpu")
     parser.add_argument("--seg_len", type=int, default=2000)
     parser.add_argument("--overlap", type=float, default=0.5)
@@ -198,7 +203,7 @@ def main():
     device = torch.device(args.device)
     
     # Load data
-    t, mixed, ecg = load_csv('1.csv', no_gt=args.no_gt)
+    t, mixed, ecg = load_csv(args.csv, no_gt=args.no_gt)
 
     # Build model & load weights
     model = ECGNet().to(device)

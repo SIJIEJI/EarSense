@@ -1,1 +1,3 @@
 data/sleep_stage_processed/X.npy
+__pycache__/
+*.pyc

@@ -17,6 +17,7 @@ os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
 
 import math
 import csv
+from pathlib import Path
 from typing import List, Tuple, Optional, Dict
 
 import torch
@@ -24,6 +25,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
 import numpy as np
+
+RELEASE_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_CSV = RELEASE_ROOT / "data" / "ecg_reconstruction" / "test_data.csv"
 
 # -----------------------------
 # Model definition (placeholder; match your training if needed)
@@ -348,7 +352,7 @@ def rr_intervals_ms(peaks: torch.Tensor, fs: float) -> torch.Tensor:
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("--csv", type=str, default="1.csv")
+    p.add_argument("--csv", type=str, default=str(DEFAULT_CSV))
     p.add_argument("--no_gt", action="store_true")
     p.add_argument("--fs", type=float, default=0.0, help="Override sampling rate in Hz (if 0, infer from time column).")
     p.add_argument("--rpeak_tol_ms", type=float, default=50.0)

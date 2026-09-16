@@ -1,0 +1,32 @@
+{
+  "description": "Small contiguous sleep-stage demo subset for loading released model weights and running inference.",
+  "source_data_dir": "D:\\VUA\\WJ\\EarSense_GitHub_release_artifacts\\data\\sleep_stage_processed",
+  "source_index_start_inclusive": 5086,
+  "source_index_end_exclusive": 5246,
+  "num_epochs": 160,
+  "epoch_duration_sec": 30,
+  "target_fs": 100,
+  "shape_X": [
+    160,
+    8,
+    3000
+  ],
+  "label_map": {
+    "W": 0,
+    "N1": 1,
+    "N2": 2,
+    "N3": 3,
+    "REM": 4
+  },
+  "label_counts_0_to_4": [
+    9,
+    17,
+    65,
+    37,
+    32
+  ],
+  "sid_values": [
+    5
+  ],
+  "original_merged_meta_total_samples": 5786
+}

@@ -524,8 +524,8 @@ def build_all_subjects(root_dir: str, out_dir: str, target_fs: int = 100):
 if __name__ == "__main__":
     import argparse
     p = argparse.ArgumentParser()
-    p.add_argument("--root_dir", required=False, default='D:\VUA\WJ\Sleep patient with sleep stage', help="Root folder containing 6 subject subfolders")
-    p.add_argument("--out_dir", required=False, default='D:\VUA\WJ\sleep_dataset_built', help="Output folder")
+    p.add_argument("--root_dir", required=False, default="raw_sleep_edf", help="Root folder containing one subfolder per subject")
+    p.add_argument("--out_dir", required=False, default="sleep_dataset_built", help="Output folder")
     p.add_argument("--target_fs", type=int, default=100)
     args = p.parse_args()
 
