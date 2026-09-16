@@ -7,7 +7,7 @@ ENV/
 *.adicht
 *.mat
 *.pkl
-*.xlsx
+
 *.edf
 *.locs
 *.csv
