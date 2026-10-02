@@ -8,8 +8,8 @@ class Config:
 
     # Windowing parameters
     # global window size
-    windowSize = 30
-    windowStep = 30
+    windowSize = 15
+    windowStep = 15
 
     # look back configurations
     AccLookBack = 5
